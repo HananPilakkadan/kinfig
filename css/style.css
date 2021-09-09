@@ -200,7 +200,7 @@ main .image-container img {
 
 /* about-section-end */
 #accounts {
-  padding: 10% 0;
+  padding: 10% 0 15% 0;
 }
 #accounts .wrapper {
   display: flex;
@@ -225,7 +225,7 @@ main .image-container img {
   width: 80%;
   color: #4b4b4b;
   line-height: 1.5em;
-  margin-bottom: 26px;
+  margin-bottom: 20px;
 }
 #accounts .text-container ul {
   list-style: none;
@@ -233,14 +233,15 @@ main .image-container img {
 #accounts .text-container li {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 6px;
 }
 #accounts .text-container li p {
   color: #4b4b4b;
   font-size: 20px;
+  line-height: 1.5em;
 }
 #accounts .text-container li span {
-  margin-right: 26px;
+  margin-right: 16px;
   padding: 8px;
   border-radius: 50%;
   background-color: #cfcfcf;
@@ -280,7 +281,7 @@ main .image-container img {
   width: 100%;
   color: #4b4b4b;
   line-height: 1.5em;
-  margin-bottom: 26px;
+  margin-bottom: 20px;
 }
 #chat-section .text-container ul {
   list-style: none;
@@ -288,14 +289,15 @@ main .image-container img {
 #chat-section .text-container li {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 6px;
 }
 #chat-section .text-container li p {
   color: #4b4b4b;
   font-size: 20px;
+  line-height: 1.5em;
 }
 #chat-section .text-container li span {
-  margin-right: 26px;
+  margin-right: 16px;
   padding: 8px;
   border-radius: 50%;
   background-color: #cfcfcf;
@@ -307,7 +309,7 @@ main .image-container img {
 /* chat-section-end */
 
 #event-section {
-  padding: 10% 0;
+  padding: 15% 0 15% 0;
 }
 #event-section .wrapper {
   display: flex;
@@ -329,7 +331,7 @@ main .image-container img {
   width: 80%;
   color: #4b4b4b;
   line-height: 1.5em;
-  margin-bottom: 26px;
+  margin-bottom: 20px;
 }
 #event-section .text-container ul {
   list-style: none;
@@ -337,14 +339,15 @@ main .image-container img {
 #event-section .text-container li {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 6px;
 }
 #event-section .text-container li p {
   color: #4b4b4b;
   font-size: 20px;
+  line-height: 1.5em;
 }
 #event-section .text-container li span {
-  margin-right: 26px;
+  margin-right: 16px;
   padding: 8px;
   border-radius: 50%;
   background-color: #cfcfcf;
@@ -390,7 +393,7 @@ main .image-container img {
   width: 100%;
   color: #4b4b4b;
   line-height: 1.5em;
-  margin-bottom: 26px;
+  margin-bottom: 20px;
 }
 #post-section .text-container ul {
   list-style: none;
@@ -398,14 +401,15 @@ main .image-container img {
 #post-section .text-container li {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 6px;
 }
 #post-section .text-container li p {
   color: #4b4b4b;
   font-size: 20px;
+  line-height: 1.5em;
 }
 #post-section .text-container li span {
-  margin-right: 26px;
+  margin-right: 16px;
   padding: 8px;
   border-radius: 50%;
   background-color: #cfcfcf;
@@ -417,7 +421,7 @@ main .image-container img {
 /* post-section-end */
 
 #gift-section {
-  padding: 10% 0;
+  padding: 15% 0 12% 0;
 }
 #gift-section .wrapper {
   display: flex;
@@ -439,7 +443,7 @@ main .image-container img {
   width: 80%;
   color: #4b4b4b;
   line-height: 1.5em;
-  margin-bottom: 26px;
+  margin-bottom: 20px;
 }
 #gift-section .text-container ul {
   list-style: none;
@@ -447,14 +451,15 @@ main .image-container img {
 #gift-section .text-container li {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 6px;
 }
 #gift-section .text-container li p {
   color: #4b4b4b;
   font-size: 20px;
+  line-height: 1.5em;
 }
 #gift-section .text-container li span {
-  margin-right: 26px;
+  margin-right: 16px;
   padding: 8px;
   border-radius: 50%;
   background-color: #cfcfcf;
@@ -520,6 +525,35 @@ main .image-container img {
   color: #4b4b4b;
   line-height: 1.5em;
   font-size: 14px;
+}
+.owl-nav{
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+.owl-nav .owl-prev{
+  position: absolute;
+  left: 0;
+  top: -50px;
+  display: block;
+}
+.owl-nav .owl-prev span{
+  font-size: 46px;
+  color: #000;
+  
+}
+.owl-nav .owl-next span{
+  font-size: 46px;
+  color: #000;
+}
+.owl-nav .owl-next{
+  position: absolute;
+  right: 0;
+  top: -50px;
+  display: block;
 }
 /* testimonial-end */
 
@@ -589,6 +623,10 @@ footer .social {
 footer .social li {
   margin-right: 26px;
 }
+footer .social li:hover{
+  transform: scale(1.1);
+  transition: all .3s ease-in;
+}
 footer .social li:last-child {
   margin-right: 0;
 }
@@ -597,6 +635,9 @@ footer .social li img {
 }
 footer .contact-us p {
   color: #b9b9b9;
+}
+footer .contact-us p a:hover{
+  color: #fff;
 }
 footer .contact-us a {
   text-decoration: none;
@@ -713,6 +754,7 @@ footer .contact-us p span {
   }
   #accounts .image-container {
     width: 60%;
+    margin-left: 35%;
   }
   #chat-section {
     padding-bottom: 6%;
@@ -725,8 +767,10 @@ footer .contact-us p span {
   }
   #chat-section .image-container {
     width: 60%;
+    margin-left: 35%;
     margin-top: 40px;
   }
+  
   #event-section {
     padding-bottom: 15%;
   }
@@ -735,6 +779,7 @@ footer .contact-us p span {
   }
   #event-section .wrapper .image-container {
     width: 50%;
+    margin-left: 35%;
   }
   #post-section {
     padding-bottom: 2%;
@@ -746,13 +791,18 @@ footer .contact-us p span {
     width: 100%;
   }
   #post-section .image-container {
-    width: 60%;
+    width: 65%;
+    margin-left: 35%;
+  }
+  #post-section .wrapper .image-container img {
+    max-width: 95%;
   }
   #gift-section .wrapper {
     flex-direction: column;
   }
   #gift-section .wrapper .image-container {
     width: 50%;
+    margin-left: 35%;
   }
   #testimonial .content .cards .quote {
     width: 15%;
@@ -770,6 +820,9 @@ footer .contact-us p span {
   #app-container .text h1 {
     width: 90%;
     font-size: 36px;
+  }
+  footer{
+    padding: 5% 0 2% 0;
   }
 }
 @media all and (max-width: 768px) {
@@ -829,6 +882,9 @@ footer .contact-us p span {
   #post-section .text-container h1 {
     font-size: 32px;
   }
+  #gift-section {
+    padding: 15% 0 15% 0;
+  }
   #gift-section .text-container h1 {
     font-size: 32px;
   }
@@ -842,7 +898,7 @@ footer .contact-us p span {
     font-size: 26px;
   }
   footer {
-    padding: 8% 0;
+    padding: 5% 0;
   }
   footer img {
     margin-bottom: 26px;
@@ -904,9 +960,14 @@ footer .contact-us p span {
   #testimonial .content .cards {
     width: 90%;
     margin: 20px  auto;
+    padding: 10% 3% 4% 3%;
   }
+  
   #testimonial .content .cards .quote {
-    top: -20px;
+    top: -37px;
+  }
+  #app-container .content{
+    border-radius: 25px;
   }
   #app-container .text h1 {
       font-size: 24px;
@@ -945,6 +1006,10 @@ footer .contact-us p span {
     #about-us .text p {
         font-size: 14px;
     }
+    #accounts {
+      padding-bottom: 20%;
+      padding:15% 0 20% 0;
+    }
     #accounts .text-container h1 {
         font-size: 28px;
         line-height:1.5em;
@@ -957,6 +1022,11 @@ footer .contact-us p span {
     }
     #accounts .image-container{
       width: 70%;
+      margin-left: 0;
+      margin-top: 16px;
+    }
+    #chat-section {
+      padding-bottom: 0;
     }
     
     #chat-section .text-container h1 {
@@ -971,6 +1041,11 @@ footer .contact-us p span {
     }
     #chat-section .image-container {
       width: 75%;
+      margin-left: 0;
+      margin-top: 16px;
+    }
+    #event-section {
+      padding: 20% 0 20% 0;
     }
     #event-section .text-container h1 {
         font-size: 28px;
@@ -984,6 +1059,7 @@ footer .contact-us p span {
     }
     #event-section .wrapper .image-container {
       width: 65%;
+      margin-left: 0;
     }
     #post-section .text-container h1 {
         font-size: 28px;
@@ -997,7 +1073,11 @@ footer .contact-us p span {
     }
     #post-section .wrapper .image-container {
       width: 70%;
+      margin-left: 0; 
     }
+    #gift-section {
+      padding: 20% 0 24% 0;
+  }
     #gift-section .text-container h1 {
         font-size: 28px;
         line-height:1.5em;
@@ -1010,6 +1090,8 @@ footer .contact-us p span {
     }
     #gift-section .wrapper .image-container {
       width: 65%;
+      margin-left: 0;
+      margin-top: 16px;
     }
     #testimonial .head h1 {
         font-size: 26px;
