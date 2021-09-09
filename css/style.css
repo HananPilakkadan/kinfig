@@ -128,7 +128,7 @@ header .menu-icon span:nth-child(2) {
       rgba(0, 37, 141, 0.5),
       rgba(3, 35, 124, 0.5)
     ),
-    url(../Images/hero\ image.jpg);
+    url(../images/hero\ image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
