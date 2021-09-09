@@ -13,19 +13,15 @@ $(document).ready(function(){
 
 
     $('.owl-carousel').owlCarousel({
-      navText:true,
         loop:true,
-        margin:10,
         nav:true,
+        dots:false,
+        margin:10,
         autoplay:true,
         autoplaySpeed:1000,
         autoplayTimeout:3000,
-        dots:false,
         touchDrag:false,
         mouseDrag:false,
-        mergeFit:false,
-        nav:true,
-        navText: ["<div class='nav-btn prev-slide'></div>","<div class='nav-btn next-slide'></div>"],
         responsive:{
           0:{
               items:1,
