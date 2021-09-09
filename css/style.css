@@ -918,6 +918,9 @@ footer .contact-us p span {
         padding-top: 15%;
         height: 480px;
     }
+    header .nav-bar .icon img {
+      width: 25%;
+    }
     header .nav-bar .icon {
         margin-bottom: 45px;
     }
@@ -925,13 +928,16 @@ footer .contact-us p span {
         font-size: 16px;
     }
     header .nav-bar li:last-child {
-        width: 44%;
+        width: 50%;
+    }
+    header .nav-bar .button {
+      padding: 16px 24px;
     }
     main .text-container h1 {
         font-size: 40px;
     }
     main .image-container {
-        width: 45%;
+        width: 53%;
     }
     #about-us .text h2 {
         font-size: 26px;
@@ -949,6 +955,9 @@ footer .contact-us p span {
     #accounts .text-container li p{
         font-size: 16px;
     }
+    #accounts .image-container{
+      width: 70%;
+    }
     
     #chat-section .text-container h1 {
         font-size: 28px;
@@ -960,6 +969,9 @@ footer .contact-us p span {
     #chat-section .text-container li p{
         font-size: 16px;
     }
+    #chat-section .image-container {
+      width: 75%;
+    }
     #event-section .text-container h1 {
         font-size: 28px;
         line-height:1.5em;
@@ -969,6 +981,9 @@ footer .contact-us p span {
     }
     #event-section .text-container li p{
         font-size: 16px;
+    }
+    #event-section .wrapper .image-container {
+      width: 65%;
     }
     #post-section .text-container h1 {
         font-size: 28px;
@@ -980,6 +995,9 @@ footer .contact-us p span {
     #post-section .text-container li p{
         font-size: 16px;
     }
+    #post-section .wrapper .image-container {
+      width: 70%;
+    }
     #gift-section .text-container h1 {
         font-size: 28px;
         line-height:1.5em;
@@ -990,18 +1008,44 @@ footer .contact-us p span {
     #gift-section .text-container li p{
         font-size: 16px;
     }
+    #gift-section .wrapper .image-container {
+      width: 65%;
+    }
     #testimonial .head h1 {
         font-size: 26px;
     }
     #testimonial .content .cards .quote {
       top: -35px;
     }
-    #app-container .text h1 {
-        font-size: 18px;
-    }
     #app-container .icons {
         width: 35%;
     }
+    #app-container .content {
+      flex-direction: column;
+      padding-top: 8%;
+  }
+  #app-container .text h1 {
+      font-size: 18px;
+      width: 100%;
+      margin-bottom: 26px;
+  }
+  #app-container .icons {
+      display: flex;
+      width: 100%;
+  }
+  #app-container .icons li {
+      display: block;
+      margin-right: 20px;
+  }
+  #app-container .icons li:last-child{
+      margin-right: 0;
+  }
+  #app-container .icons li img {
+      width: 100%;
+  }
+  #app-container .icons {
+      width: 75%;
+  }
 }
 @media all and (max-width: 360px) {
     header .nav-bar li:last-child {
@@ -1085,31 +1129,8 @@ footer .contact-us p span {
     #testimonial .content .cards .quote{
       top: -24px;
     }
-    #app-container .content {
-        flex-direction: column;
-        padding-top: 8%;
-    }
     #app-container .text h1 {
-        font-size: 14px;
-        width: 100%;
-        margin-bottom: 26px;
-    }
-    #app-container .icons {
-        display: flex;
-        width: 100%;
-    }
-    #app-container .icons li {
-        display: block;
-        margin-right: 20px;
-    }
-    #app-container .icons li:last-child{
-        margin-right: 0;
-    }
-    #app-container .icons li img {
-        width: 100%;
-    }
-    #app-container .icons {
-        width: 75%;
+      font-size: 16px;
     }
     footer .contact-us a {
         font-size: 14px;
