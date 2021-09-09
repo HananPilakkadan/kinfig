@@ -1,0 +1,1185 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "product_sansbold";
+  src: url("../fonts/productsans-bold-webfont.woff2") format("woff2"),
+    url("../fonts/productsans-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "product_sans_lightregular";
+  src: url("../fonts/productsans-light-webfont.woff2") format("woff2"),
+    url("../fonts/productsans-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "product_sans_mediumregular";
+  src: url("../fonts/productsans-medium-webfont.woff2") format("woff2"),
+    url("../fonts/productsans-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "product_sansregular";
+  src: url("../fonts/productsans-regular-webfont.woff2") format("woff2"),
+    url("../fonts/productsans-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "product_sansregular";
+}
+.active{
+    overflow: hidden;
+}
+.wrapper {
+  width: 90%;
+  max-width: 1350px;
+  margin: 0 auto;
+}
+header {
+  height: 130px;
+  display: flex;
+  align-items: center;
+}
+
+header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo img {
+  width: 40%;
+  display: block;
+}
+header .nav-bar {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+header .nav-bar .icon {
+  display: none;
+}
+
+header .nav-bar li :last-child {
+  margin-right: 0;
+}
+header .nav-bar li {
+  margin-right: 50px;
+  opacity: 0.7;
+}
+header .nav-bar li a {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffff;
+  letter-spacing: 2px;
+}
+header .nav-bar li:first-child {
+  opacity: 1;
+}
+header .nav-bar li:hover {
+  opacity: 1;
+}
+header .nav-bar .button {
+  opacity: 1;
+  padding: 12px 24px;
+  border-radius: 30px;
+  background-color: #45ae50;
+}
+header .nav-bar .button:hover {
+  transition: all 0.2s ease-in;
+  background-color: #2a8034;
+}
+header .menu-icon {
+  display: none;
+  z-index: 44;
+}
+header .menu-icon span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+}
+header .menu-icon span:nth-child(2) {
+  margin: 4px auto;
+}
+#spotlight {
+  background: linear-gradient(
+      95.62deg,
+      rgba(0, 37, 141, 0.5),
+      rgba(3, 35, 124, 0.5)
+    ),
+    url(../Images/hero\ image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main {
+  height: calc(100vh - 100px);
+}
+main .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .text-container {
+  width: 80%;
+}
+main .text-container h1 {
+  width: 60%;
+  color: #fff;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 1.5em;
+  margin-bottom: 25px;
+}
+main .text-container p {
+  font-size: 20px;
+  width: 70%;
+  color: #fff;
+  line-height: 1.5em;
+}
+main .text-container h1 span {
+  color: #29317e;
+}
+main .image-container img {
+  max-width: 90%;
+}
+/* main-section-end */
+#about-us {
+  padding: 5% 0;
+}
+#about-us .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#about-us .image {
+  width: 40%;
+}
+#about-us .image img {
+  max-width: 60%;
+}
+#about-us .text {
+  width: 60%;
+}
+#about-us .text h2 {
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  border-left: 5px solid #29317e;
+  padding-left: 20px;
+}
+#about-us .text h2 span {
+  color: #29317e;
+}
+#about-us .text p {
+  width: 95%;
+  line-height: 1.5em;
+  color: #525252;
+  font-size: 18px;
+}
+
+/* about-section-end */
+#accounts {
+  padding: 10% 0;
+}
+#accounts .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#accounts .text-container {
+  width: 50%;
+}
+#accounts .text-container h1 {
+  font-size: 38px;
+  letter-spacing: 2px;
+  padding-left: 20px;
+  margin-bottom: 30px;
+  border-left: 5px solid #29317e;
+}
+#accounts .text-container h1 span {
+  color: #29317e;
+}
+#accounts .text-container .content {
+  font-size: 20px;
+  width: 80%;
+  color: #4b4b4b;
+  line-height: 1.5em;
+  margin-bottom: 26px;
+}
+#accounts .text-container ul {
+  list-style: none;
+}
+#accounts .text-container li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#accounts .text-container li p {
+  color: #4b4b4b;
+  font-size: 20px;
+}
+#accounts .text-container li span {
+  margin-right: 26px;
+  padding: 8px;
+  border-radius: 50%;
+  background-color: #cfcfcf;
+}
+#accounts .text-container li img {
+  width: 15px;
+  display: block;
+}
+#accounts .image-container {
+  width: 50%;
+}
+#accounts .image-container img {
+  max-width: 90%;
+}
+/* account-section-end */
+
+#chat-section .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#chat-section .wrapper .image-container img {
+  max-width: 90%;
+}
+#chat-section .text-container h1 {
+  font-size: 38px;
+  letter-spacing: 2px;
+  padding-left: 20px;
+  margin-bottom: 30px;
+  border-left: 5px solid #29317e;
+}
+#chat-section .text-container h1 span {
+  color: #29317e;
+}
+#chat-section .text-container .content {
+  font-size: 20px;
+  width: 100%;
+  color: #4b4b4b;
+  line-height: 1.5em;
+  margin-bottom: 26px;
+}
+#chat-section .text-container ul {
+  list-style: none;
+}
+#chat-section .text-container li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#chat-section .text-container li p {
+  color: #4b4b4b;
+  font-size: 20px;
+}
+#chat-section .text-container li span {
+  margin-right: 26px;
+  padding: 8px;
+  border-radius: 50%;
+  background-color: #cfcfcf;
+}
+#chat-section .text-container li img {
+  width: 15px;
+  display: block;
+}
+/* chat-section-end */
+
+#event-section {
+  padding: 10% 0;
+}
+#event-section .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#event-section .text-container h1 {
+  font-size: 38px;
+  letter-spacing: 2px;
+  padding-left: 20px;
+  margin-bottom: 30px;
+  border-left: 5px solid #29317e;
+}
+#event-section .text-container h1 span {
+  color: #29317e;
+}
+#event-section .text-container .content {
+  font-size: 20px;
+  width: 80%;
+  color: #4b4b4b;
+  line-height: 1.5em;
+  margin-bottom: 26px;
+}
+#event-section .text-container ul {
+  list-style: none;
+}
+#event-section .text-container li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#event-section .text-container li p {
+  color: #4b4b4b;
+  font-size: 20px;
+}
+#event-section .text-container li span {
+  margin-right: 26px;
+  padding: 8px;
+  border-radius: 50%;
+  background-color: #cfcfcf;
+}
+#event-section .text-container li img {
+  width: 15px;
+  display: block;
+}
+#event-section .wrapper .image-container {
+  width: 80%;
+}
+#event-section .wrapper .image-container img {
+  max-width: 100%;
+}
+/* event-section-end */
+
+#post-section .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#post-section .wrapper .image-container {
+  width: 50%;
+}
+#post-section .wrapper .image-container img {
+  max-width: 90%;
+}
+#post-section .text-container {
+  width: 40%;
+}
+#post-section .text-container h1 {
+  font-size: 38px;
+  letter-spacing: 2px;
+  padding-left: 20px;
+  margin-bottom: 30px;
+  border-left: 5px solid #29317e;
+}
+#post-section .text-container h1 span {
+  color: #29317e;
+}
+#post-section .text-container .content {
+  font-size: 20px;
+  width: 100%;
+  color: #4b4b4b;
+  line-height: 1.5em;
+  margin-bottom: 26px;
+}
+#post-section .text-container ul {
+  list-style: none;
+}
+#post-section .text-container li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#post-section .text-container li p {
+  color: #4b4b4b;
+  font-size: 20px;
+}
+#post-section .text-container li span {
+  margin-right: 26px;
+  padding: 8px;
+  border-radius: 50%;
+  background-color: #cfcfcf;
+}
+#post-section .text-container li img {
+  width: 15px;
+  display: block;
+}
+/* post-section-end */
+
+#gift-section {
+  padding: 10% 0;
+}
+#gift-section .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#gift-section .text-container h1 {
+  font-size: 38px;
+  letter-spacing: 2px;
+  padding-left: 20px;
+  margin-bottom: 30px;
+  border-left: 5px solid #29317e;
+}
+#gift-section .text-container h1 span {
+  color: #29317e;
+}
+#gift-section .text-container .content {
+  font-size: 20px;
+  width: 80%;
+  color: #4b4b4b;
+  line-height: 1.5em;
+  margin-bottom: 26px;
+}
+#gift-section .text-container ul {
+  list-style: none;
+}
+#gift-section .text-container li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#gift-section .text-container li p {
+  color: #4b4b4b;
+  font-size: 20px;
+}
+#gift-section .text-container li span {
+  margin-right: 26px;
+  padding: 8px;
+  border-radius: 50%;
+  background-color: #cfcfcf;
+}
+#gift-section .text-container li img {
+  width: 15px;
+  display: block;
+}
+#gift-section .wrapper .image-container {
+  width: 70%;
+}
+#gift-section .wrapper .image-container img {
+  max-width: 100%;
+}
+/* gift-seection-end */
+#testimonial .head {
+  text-align: center;
+}
+#testimonial .head h1 {
+  font-size: 38px;
+  letter-spacing: 2px;
+}
+#testimonial .head h1 span {
+  color: #29317e;
+}
+#testimonial .content {
+  display: flex;
+  padding: 10% 0;
+  width: 95%;
+  margin: 0 auto;
+}
+#testimonial .content .cards {
+  display: block;
+  width: 85%;
+  padding: 5% 8%;
+  text-align: center;
+  border-radius: 35px;
+  margin: 20px auto;
+  height: 250px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;}
+#testimonial .content .cards .user {
+  border-radius: 50%;
+  width: 30%;
+  max-width: 40%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#testimonial .content .cards .quote {
+  position: relative;
+  top:-28px;
+  right: -190px;
+  width: 30px;
+}
+#testimonial .content .cards h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: #3f3f3f;
+}
+#testimonial .content .cards p {
+  color: #4b4b4b;
+  line-height: 1.5em;
+  font-size: 14px;
+}
+/* testimonial-end */
+
+#app-container {
+  padding-bottom: 5%;
+}
+#app-container .content {
+  background: linear-gradient(
+      95.62deg,
+      rgba(2, 31, 109, 0.8),
+      rgba(2, 31, 109, 0.8)
+    ),
+    url(../images/download\ background.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5% 8%;
+  background-color: rgb(128, 56, 56);
+  border-radius: 38px;
+}
+#app-container .text {
+  width: 60%;
+}
+#app-container .text h1 {
+  font-size: 38px;
+  color: #fff;
+  line-height: 1.5em;
+  width: 80%;
+}
+#app-container .icons {
+  list-style: none;
+  width: 30%;
+}
+#app-container .icons li {
+  width: 100%;
+  margin-bottom: 20px;
+}
+#app-container .icons li:last-child {
+  margin-bottom: 0;
+}
+#app-container .icons li:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in;
+}
+#app-container .icons li img {
+  width: 70%;
+  display: block;
+}
+/* app-end */
+
+footer {
+  padding: 4% 0 2% 0;
+  background-color: #29317e;
+  text-align: center;
+}
+footer img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+footer .social {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+footer .social li {
+  margin-right: 26px;
+}
+footer .social li:last-child {
+  margin-right: 0;
+}
+footer .social li img {
+  width: 30px;
+}
+footer .contact-us p {
+  color: #b9b9b9;
+}
+footer .contact-us a {
+  text-decoration: none;
+  color: #b9b9b9;
+}
+footer .contact-us p span {
+  margin: 0 10px;
+}
+
+/* responsive */
+
+@media all and (max-width: 1280px) {
+  main .text-container h1 {
+    width: 70%;
+  }
+  #chat-section .wrapper .image-container img {
+    max-width: 85%;
+  }
+  #post-section .wrapper .image-container img {
+    max-width: 85%;
+  }
+  #gift-section .wrapper .image-container img {
+    max-width: 95%;
+  }
+}
+@media all and (max-width: 980px) {
+  header .nav-bar {
+    display: block;
+    width: 100%;
+    height: 550px;
+    right: 0;
+    left: 0;
+    top: -100%;
+    flex-direction: column;
+    position: fixed;
+    text-align: center;
+    padding: 10% 4% 8% 4%;
+    background: linear-gradient(50deg, #475fa0, #03237c);
+    transition: all 0.6s ease-in;
+    -webkit-transition: all 0.6s ease-in;
+    -moz-transition: all 0.6s ease-in;
+    -o-transition: all 0.6s ease-in;
+  }
+  .active header .nav-bar {
+    top: 0;
+  }
+  header .nav-bar li {
+    width: 40%;
+    margin: 0 auto;
+    padding-bottom: 24px;
+    border-bottom: 2px dashed #a0a0a0;
+    margin-bottom: 30px;
+  }
+  header .nav-bar li:last-child {
+    width: 25%;
+    border: none;
+  }
+  header .nav-bar .icon {
+    display: block;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  header .menu-icon {
+    display: block;
+  }
+  header .menu-icon span {
+    transition: all 0.4s ease-in;
+    -webkit-transition: all 0.4s ease-in;
+    -moz-transition: all 0.4s ease-in;
+    -o-transition: all 0.4s ease-in;
+  }
+  .active header .menu-icon span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+    animation: animista 0.6s linear;
+  }
+  .active header .menu-icon span:nth-child(2) {
+    transform: translateY(30px);
+    opacity: 0;
+    animation: animista 0.6s linear;
+  }
+  .active header .menu-icon span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+    animation: animista 0.6s linear;
+  }
+  @keyframes animista {
+    0%,
+    50% {
+      transform: rotateY(360deg);
+    }
+    100% {
+      transform: rotateY(0);
+    }
+  }
+  header .nav-bar .icon img {
+    width: 15%;
+  }
+  #spotlight {
+    background-position: center;
+  }
+  main .text-container h1 {
+    width: 90%;
+  }
+  main .text-container p {
+    width: 90%;
+  }
+  #accounts {
+    padding-bottom: 15%;
+  }
+  #accounts .wrapper {
+    flex-direction: column;
+  }
+  #accounts .text-container {
+    width: 100%;
+  }
+  #accounts .image-container {
+    width: 60%;
+  }
+  #chat-section {
+    padding-bottom: 6%;
+  }
+  #chat-section .wrapper {
+    flex-direction: column-reverse;
+  }
+  #chat-section .text-container {
+    width: 100%;
+  }
+  #chat-section .image-container {
+    width: 60%;
+    margin-top: 40px;
+  }
+  #event-section {
+    padding-bottom: 15%;
+  }
+  #event-section .wrapper {
+    flex-direction: column;
+  }
+  #event-section .wrapper .image-container {
+    width: 50%;
+  }
+  #post-section {
+    padding-bottom: 2%;
+  }
+  #post-section .wrapper {
+    flex-direction: column-reverse;
+  }
+  #post-section .text-container {
+    width: 100%;
+  }
+  #post-section .image-container {
+    width: 60%;
+  }
+  #gift-section .wrapper {
+    flex-direction: column;
+  }
+  #gift-section .wrapper .image-container {
+    width: 50%;
+  }
+  #testimonial .content .cards .quote {
+    width: 15%;
+    top: -36px;
+    right: -75%
+  }
+  #testimonial .content .cards{
+    padding: 4% 3%;
+    height: 300px;
+  }
+  #testimonial .content .cards h4 {
+      margin-bottom: 15px;
+      top: -125px;
+  }
+  #app-container .text h1 {
+    width: 90%;
+    font-size: 36px;
+  }
+}
+@media all and (max-width: 768px) {
+  main {
+    display: flex;
+    align-items: center;
+  }
+  main .wrapper {
+    flex-direction: column;
+  }
+  main .text-container {
+    width: 100%;
+    text-align: center;
+  }
+  main .text-container h1 {
+    font-size: 46px;
+    margin: 0 auto;
+  }
+  main .text-container p {
+    font-size: 18px;
+    width: 60%;
+    margin: 0 auto;
+  }
+  main .image-container {
+    margin-top: 26px;
+    width: 36%;
+  }
+  #about-us .wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+  #about-us .image {
+    margin-bottom: 30px;
+  }
+  #about-us .text h2 {
+    display: inline;
+    font-size: 28px;
+  }
+  #about-us .text p {
+    font-size: 16px;
+    width: 100%;
+    margin-top: 26px;
+  }
+  #app-container .text h1 {
+    width: 100%;
+    font-size: 28px;
+  }
+  #accounts .text-container h1 {
+    font-size: 32px;
+  }
+  #chat-section .text-container h1 {
+    font-size: 32px;
+  }
+  #event-section .text-container h1 {
+    font-size: 32px;
+  }
+  #post-section .text-container h1 {
+    font-size: 32px;
+  }
+  #gift-section .text-container h1 {
+    font-size: 32px;
+  }
+  #testimonial .head h1 {
+    font-size: 34px;
+  }
+  #testimonial .content .cards .quote {
+    top: -30px;
+  }
+  #app-container .text h1 {
+    font-size: 26px;
+  }
+  footer {
+    padding: 8% 0;
+  }
+  footer img {
+    margin-bottom: 26px;
+  }
+}
+@media all and (max-width: 640px) {
+    header .nav-bar {
+        height: 450px;
+    }
+    header .nav-bar li:last-child {
+        width: 35%;
+    }
+    main .text-container h1 {
+        font-size: 44px;
+    }
+    main .text-container p {
+        width: 90%;
+        font-size: 16px;
+    }
+    #about-us {
+        padding: 5% 0 2% 0;
+    }
+    #about-us .text {
+        width: 90%;
+    }
+    #accounts .text-container .content {
+        font-size: 18px;
+    }
+    #accounts .text-container li p {
+        font-size: 18px;
+    }
+    #chat-section .text-container .content {
+        font-size: 18px;
+    }
+    #chat-section .text-container li p {
+        font-size: 18px;
+    }
+    #event-section .text-container .content {
+        font-size: 18px;
+    }
+    #event-section .text-container li p {
+        font-size: 18px;
+    }
+    #post-section .text-container .content {
+        font-size: 18px;
+    }
+    #post-section .text-container li p {
+        font-size: 18px;
+    }
+    #gift-section .text-container .content {
+        font-size: 18px;
+    }
+  #gift-section .text-container li p {
+    font-size: 18px;
+}
+#testimonial .head h1 {
+    font-size: 30px;
+  }
+  #testimonial .content .cards {
+    width: 90%;
+    margin: 20px  auto;
+  }
+  #testimonial .content .cards .quote {
+    top: -20px;
+  }
+  #app-container .text h1 {
+      font-size: 24px;
+    }
+}
+
+@media all and (max-width: 480px) {
+    header .nav-bar{
+        padding-top: 15%;
+        height: 480px;
+    }
+    header .nav-bar .icon {
+        margin-bottom: 45px;
+    }
+    header .nav-bar li a {
+        font-size: 16px;
+    }
+    header .nav-bar li:last-child {
+        width: 44%;
+    }
+    main .text-container h1 {
+        font-size: 40px;
+    }
+    main .image-container {
+        width: 45%;
+    }
+    #about-us .text h2 {
+        font-size: 26px;
+    }
+    #about-us .text p {
+        font-size: 14px;
+    }
+    #accounts .text-container h1 {
+        font-size: 28px;
+        line-height:1.5em;
+    }
+    #accounts .text-container .content {
+        font-size: 16px;
+    }
+    #accounts .text-container li p{
+        font-size: 16px;
+    }
+    
+    #chat-section .text-container h1 {
+        font-size: 28px;
+        line-height:1.5em;
+    }
+    #chat-section .text-container .content {
+        font-size: 16px;
+    }
+    #chat-section .text-container li p{
+        font-size: 16px;
+    }
+    #event-section .text-container h1 {
+        font-size: 28px;
+        line-height:1.5em;
+    }
+    #event-section .text-container .content {
+        font-size: 16px;
+    }
+    #event-section .text-container li p{
+        font-size: 16px;
+    }
+    #post-section .text-container h1 {
+        font-size: 28px;
+        line-height:1.5em;
+    }
+    #post-section .text-container .content {
+        font-size: 16px;
+    }
+    #post-section .text-container li p{
+        font-size: 16px;
+    }
+    #gift-section .text-container h1 {
+        font-size: 28px;
+        line-height:1.5em;
+    }
+    #gift-section .text-container .content {
+        font-size: 16px;
+    }
+    #gift-section .text-container li p{
+        font-size: 16px;
+    }
+    #testimonial .head h1 {
+        font-size: 26px;
+    }
+    #testimonial .content .cards .quote {
+      top: -35px;
+    }
+    #app-container .text h1 {
+        font-size: 18px;
+    }
+    #app-container .icons {
+        width: 35%;
+    }
+}
+@media all and (max-width: 360px) {
+    header .nav-bar li:last-child {
+        width: 55%;
+    }
+    header .nav-bar .icon img {
+        width: 20%;
+    }
+    main .text-container h1{
+        font-size: 36px;
+        width: 100%;
+        margin-bottom: 24px;
+    }
+    main .text-container p {
+        font-size: 14px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #about-us {
+        padding-top: 8%;
+    }
+    #about-us .text h2 {
+        font-size: 24px;
+    }
+    #about-us .text p {
+        width: 100%;
+    }
+    #accounts .text-container h1{
+        font-size: 26px;
+        border-left:3px solid #29317e;
+    }
+    #accounts .text-container .content {
+        font-size: 14px;
+    }
+    #accounts .text-container li p {
+        font-size: 14px;
+    }
+    #chat-section .text-container h1{
+        font-size: 26px;
+        border-left:3px solid #29317e;
+    }
+    #chat-section .text-container .content {
+        font-size: 14px;
+    }
+    #chat-section .text-container li p {
+        font-size: 14px;
+    }
+    #event-section .text-container h1{
+        font-size: 26px;
+        border-left:3px solid #29317e;
+    }
+    #event-section .text-container .content {
+        font-size: 14px;
+    }
+    #event-section .text-container li p {
+        font-size: 14px;
+    }
+    #post-section .text-container h1{
+        font-size: 26px;
+        border-left:3px solid #29317e;
+    }
+    #post-section .text-container .content {
+        font-size: 14px;
+    }
+    #post-section .text-container li p {
+        font-size: 14px;
+    }
+    #gift-section .text-container h1{
+        font-size: 26px;
+        border-left:3px solid #29317e;
+    }
+    #gift-section .text-container .content {
+        font-size: 14px;
+    }
+    #testimonial .head h1 {
+        font-size: 22px;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 26px;
+    }
+    #testimonial .content .cards .quote{
+      top: -24px;
+    }
+    #app-container .content {
+        flex-direction: column;
+        padding-top: 8%;
+    }
+    #app-container .text h1 {
+        font-size: 14px;
+        width: 100%;
+        margin-bottom: 26px;
+    }
+    #app-container .icons {
+        display: flex;
+        width: 100%;
+    }
+    #app-container .icons li {
+        display: block;
+        margin-right: 20px;
+    }
+    #app-container .icons li:last-child{
+        margin-right: 0;
+    }
+    #app-container .icons li img {
+        width: 100%;
+    }
+    #app-container .icons {
+        width: 75%;
+    }
+    footer .contact-us a {
+        font-size: 14px;
+    }
+}
+@media all and (max-width: 320px) {
+    header .nav-bar {
+        height: 450px;
+    }
+    header .nav-bar li:last-child {
+        width: 60%;
+    }
+    main .image-container{
+        width: 50%;
+    }
+    main .text-container h1 {
+        font-size: 32px;
+    }
+    main .text-container p{
+        font-size: 13px;
+    }
+    #about-us .text p {
+        font-size: 13px;
+    }
+    #accounts .text-container h1 {
+        font-size: 24px;
+    }
+    #accounts .text-container .content {
+        font-size: 13px;
+    }
+    #accounts .text-container li p {
+        font-size: 13px;
+    }
+    #chat-section .text-container h1 {
+        font-size: 24px;
+    }
+    #chat-section .text-container .content {
+        font-size: 13px;
+    }
+    #chat-section .text-container li p {
+        font-size: 13px;
+    }
+    #event-section .text-container h1 {
+        font-size: 24px;
+    }
+    #event-section .text-container .content {
+        font-size: 13px;
+    }
+    #event-section .text-container li p {
+        font-size: 13px;
+    }
+    #post-section .text-container h1 {
+        font-size: 24px;
+    }
+    #post-section .text-container .content {
+        font-size: 13px;
+    }
+    #post-section .text-container li p {
+        font-size: 13px;
+    }
+    #gift-section .text-container h1 {
+        font-size: 24px;
+    }
+    #gift-section .text-container .content {
+        font-size: 13px;
+    }
+    #gift-section .text-container li p {
+        font-size: 13px;
+    }
+    footer img{
+        width: 90  px;
+    }
+}
