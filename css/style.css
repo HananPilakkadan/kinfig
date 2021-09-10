@@ -1105,7 +1105,7 @@ footer .contact-us p span {
     font-size: 26px;
   }
   #testimonial .content .cards .quote {
-    top: -35px;
+    top: -58px;
   }
   .owl-nav .owl-next {
     position: absolute;
@@ -1118,6 +1118,9 @@ footer .contact-us p span {
     left: -18px;
     top: -50px;
     display: block;
+  }
+  #app-container {
+    padding-bottom: 11%;
   }
   #app-container .text {
     width: 100%;
@@ -1150,7 +1153,10 @@ footer .contact-us p span {
     width: 100%;
   }
   #app-container .icons {
-    width: 75%;
+    width: 80%;
+  }
+  footer {
+    padding: 11% 0;
   }
 }
 @media all and (max-width: 360px) {
