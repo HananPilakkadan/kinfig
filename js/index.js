@@ -9,6 +9,11 @@ $(document).ready(function () {
     scrollContainer: null, 
     resetAnimation: true,
   });
+  if ($('.wow').hasClass('animated')) {
+    $(this).removeClass('animated');
+    $(this).removeAttr('style');
+    new WOW().init();
+}
   wow.init();
 
   $(".owl-carousel").owlCarousel({
