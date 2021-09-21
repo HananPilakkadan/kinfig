@@ -10,52 +10,53 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 }
 
 @font-face {
   font-family: "product_sansbold";
-  src: url("../fonts/productsans-bold-webfont.woff2") format("woff2"),
-    url("../fonts/productsans-bold-webfont.woff") format("woff");
+  src: url("../fonts/productsans-bold-webfont.woff2") format("woff2"), url("../fonts/productsans-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "product_sans_lightregular";
-  src: url("../fonts/productsans-light-webfont.woff2") format("woff2"),
-    url("../fonts/productsans-light-webfont.woff") format("woff");
+  src: url("../fonts/productsans-light-webfont.woff2") format("woff2"), url("../fonts/productsans-light-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "product_sans_mediumregular";
-  src: url("../fonts/productsans-medium-webfont.woff2") format("woff2"),
-    url("../fonts/productsans-medium-webfont.woff") format("woff");
+  src: url("../fonts/productsans-medium-webfont.woff2") format("woff2"), url("../fonts/productsans-medium-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "product_sansregular";
-  src: url("../fonts/productsans-regular-webfont.woff2") format("woff2"),
-    url("../fonts/productsans-regular-webfont.woff") format("woff");
+  src: url("../fonts/productsans-regular-webfont.woff2") format("woff2"), url("../fonts/productsans-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
+
 body {
   font-family: "product_sansregular";
 }
+
 .active {
   overflow: hidden;
 }
+
 .wrapper {
   width: 90%;
   max-width: 1350px;
   margin: 0 auto;
 }
+
 header {
   height: 130px;
   display: flex;
@@ -67,15 +68,17 @@ header .wrapper {
   justify-content: space-between;
   align-items: center;
 }
+
 header .logo img {
   width: 40%;
-  display: block;
 }
+
 header .nav-bar {
   display: flex;
   align-items: center;
   list-style: none;
 }
+
 header .nav-bar .icon {
   display: none;
 }
@@ -83,66 +86,73 @@ header .nav-bar .icon {
 header .nav-bar li :last-child {
   margin-right: 0;
 }
+
 header .nav-bar li {
   margin-right: 50px;
   opacity: 0.7;
 }
+
 header .nav-bar li a {
   font-size: 18px;
   font-weight: 600;
   color: #ffff;
   letter-spacing: 2px;
 }
+
 header .nav-bar li:first-child {
   opacity: 1;
 }
+
 header .nav-bar li:hover {
   opacity: 1;
 }
+
 header .nav-bar .button {
+  display: none;
   opacity: 1;
   padding: 12px 24px;
   border-radius: 30px;
   background-color: #45ae50;
 }
+
 header .nav-bar .button:hover {
   transition: all 0.2s ease-in;
   background-color: #2a8034;
 }
+
 header .menu-icon {
   display: none;
   z-index: 44;
 }
+
 header .menu-icon span {
   display: block;
   width: 25px;
   height: 3px;
   background-color: #fff;
 }
+
 header .menu-icon span:nth-child(2) {
   margin: 4px auto;
 }
+
 #spotlight {
-  background: linear-gradient(
-      95.62deg,
-      rgba(0, 37, 141, 0.5),
-      rgba(3, 35, 124, 0.5)
-    ),
-    url(../images/hero\ image.jpg);
+  background: linear-gradient( 95.62deg, rgba(0, 37, 141, 0.5), rgba(3, 35, 124, 0.5)), url(../images/hero\ image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-main {
-  height: calc(100vh - 100px);
-}
+
 main .wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: calc(100vh - 100px);
 }
+
 main .text-container {
   width: 80%;
 }
+
 main .text-container h1 {
   width: 60%;
   color: #fff;
@@ -151,36 +161,46 @@ main .text-container h1 {
   line-height: 1.5em;
   margin-bottom: 25px;
 }
+
 main .text-container p {
   font-size: 20px;
   width: 70%;
   color: #fff;
   line-height: 1.5em;
 }
+
 main .text-container h1 span {
   color: #29317e;
 }
+
 main .image-container img {
-  max-width: 90%;
+  max-width: 75%;
 }
+
 /* main-section-end */
+
 #about-us {
-  padding: 5% 0;
+  padding: 8% 0;
 }
+
 #about-us .wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 #about-us .image {
   width: 40%;
 }
+
 #about-us .image img {
   max-width: 60%;
 }
+
 #about-us .text {
   width: 60%;
 }
+
 #about-us .text h2 {
   font-size: 30px;
   letter-spacing: 2px;
@@ -188,38 +208,46 @@ main .image-container img {
   border-left: 5px solid #29317e;
   padding-left: 20px;
 }
+
 #about-us .text h2 span {
   color: #29317e;
 }
+
 #about-us .text p {
   width: 95%;
   line-height: 1.5em;
   color: #525252;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 /* about-section-end */
+
 #accounts {
-  padding: 10% 0 15% 0;
+  padding: 0 0 10% 0;
 }
+
 #accounts .wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 #accounts .text-container {
   width: 50%;
 }
+
 #accounts .text-container h1 {
-  font-size: 38px;
+  font-size: 30px;
   letter-spacing: 2px;
   padding-left: 20px;
   margin-bottom: 30px;
   border-left: 5px solid #29317e;
 }
+
 #accounts .text-container h1 span {
   color: #29317e;
 }
+
 #accounts .text-container .content {
   font-size: 20px;
   width: 80%;
@@ -227,55 +255,70 @@ main .image-container img {
   line-height: 1.5em;
   margin-bottom: 20px;
 }
+
 #accounts .text-container ul {
   list-style: none;
 }
+
 #accounts .text-container li {
   display: flex;
   align-items: center;
   margin-bottom: 6px;
 }
+
 #accounts .text-container li p {
   color: #4b4b4b;
   font-size: 20px;
   line-height: 1.5em;
 }
+
 #accounts .text-container li span {
   margin-right: 16px;
   padding: 8px;
   border-radius: 50%;
   background-color: #cfcfcf;
 }
+
 #accounts .text-container li img {
   width: 15px;
   display: block;
 }
+
 #accounts .image-container {
   width: 50%;
 }
+
 #accounts .image-container img {
   max-width: 90%;
 }
+
 /* account-section-end */
 
+#chat-section  {
+  padding-bottom: 10%;
+}
 #chat-section .wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 #chat-section .wrapper .image-container img {
   max-width: 90%;
 }
+
 #chat-section .text-container h1 {
-  font-size: 38px;
+  font-size: 30px;
   letter-spacing: 2px;
   padding-left: 20px;
   margin-bottom: 30px;
   border-left: 5px solid #29317e;
 }
+
 #chat-section .text-container h1 span {
   color: #29317e;
 }
+
 #chat-section .text-container .content {
   font-size: 20px;
   width: 100%;
@@ -283,49 +326,59 @@ main .image-container img {
   line-height: 1.5em;
   margin-bottom: 20px;
 }
+
 #chat-section .text-container ul {
   list-style: none;
 }
+
 #chat-section .text-container li {
   display: flex;
   align-items: center;
   margin-bottom: 6px;
 }
+
 #chat-section .text-container li p {
   color: #4b4b4b;
   font-size: 20px;
   line-height: 1.5em;
 }
+
 #chat-section .text-container li span {
   margin-right: 16px;
   padding: 8px;
   border-radius: 50%;
   background-color: #cfcfcf;
 }
+
 #chat-section .text-container li img {
   width: 15px;
   display: block;
 }
+
 /* chat-section-end */
 
 #event-section {
-  padding: 15% 0 15% 0;
+  padding-bottom:10%;
 }
+
 #event-section .wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 #event-section .text-container h1 {
-  font-size: 38px;
+  font-size: 30px;
   letter-spacing: 2px;
   padding-left: 20px;
   margin-bottom: 30px;
   border-left: 5px solid #29317e;
 }
+
 #event-section .text-container h1 span {
   color: #29317e;
 }
+
 #event-section .text-container .content {
   font-size: 20px;
   width: 80%;
@@ -333,61 +386,78 @@ main .image-container img {
   line-height: 1.5em;
   margin-bottom: 20px;
 }
+
 #event-section .text-container ul {
   list-style: none;
 }
+
 #event-section .text-container li {
   display: flex;
   align-items: center;
   margin-bottom: 6px;
 }
+
 #event-section .text-container li p {
   color: #4b4b4b;
   font-size: 20px;
   line-height: 1.5em;
 }
+
 #event-section .text-container li span {
   margin-right: 16px;
   padding: 8px;
   border-radius: 50%;
   background-color: #cfcfcf;
 }
+
 #event-section .text-container li img {
   width: 15px;
   display: block;
 }
+
 #event-section .wrapper .image-container {
   width: 80%;
 }
+
 #event-section .wrapper .image-container img {
   max-width: 100%;
 }
+
 /* event-section-end */
 
+#post-section {
+  padding-bottom: 10%;
+}
 #post-section .wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 #post-section .wrapper .image-container {
   width: 50%;
 }
+
 #post-section .wrapper .image-container img {
   max-width: 90%;
 }
+
 #post-section .text-container {
   width: 40%;
 }
+
 #post-section .text-container h1 {
-  font-size: 38px;
+  font-size: 30px;
   letter-spacing: 2px;
   padding-left: 20px;
   margin-bottom: 30px;
   border-left: 5px solid #29317e;
 }
+
 #post-section .text-container h1 span {
   color: #29317e;
 }
+
 #post-section .text-container .content {
   font-size: 20px;
   width: 100%;
@@ -395,49 +465,59 @@ main .image-container img {
   line-height: 1.5em;
   margin-bottom: 20px;
 }
+
 #post-section .text-container ul {
   list-style: none;
 }
+
 #post-section .text-container li {
   display: flex;
   align-items: center;
   margin-bottom: 6px;
 }
+
 #post-section .text-container li p {
   color: #4b4b4b;
   font-size: 20px;
   line-height: 1.5em;
 }
+
 #post-section .text-container li span {
   margin-right: 16px;
   padding: 8px;
   border-radius: 50%;
   background-color: #cfcfcf;
 }
+
 #post-section .text-container li img {
   width: 15px;
   display: block;
 }
+
 /* post-section-end */
 
 #gift-section {
-  padding: 15% 0 12% 0;
+  padding-bottom: 10%;
 }
+
 #gift-section .wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 #gift-section .text-container h1 {
-  font-size: 38px;
+  font-size: 30px;
   letter-spacing: 2px;
   padding-left: 20px;
   margin-bottom: 30px;
   border-left: 5px solid #29317e;
 }
+
 #gift-section .text-container h1 span {
   color: #29317e;
 }
+
 #gift-section .text-container .content {
   font-size: 20px;
   width: 80%;
@@ -445,49 +525,62 @@ main .image-container img {
   line-height: 1.5em;
   margin-bottom: 20px;
 }
+
 #gift-section .text-container ul {
   list-style: none;
 }
+
 #gift-section .text-container li {
   display: flex;
   align-items: center;
   margin-bottom: 6px;
 }
+
 #gift-section .text-container li p {
   color: #4b4b4b;
   font-size: 20px;
   line-height: 1.5em;
 }
+
 #gift-section .text-container li span {
   margin-right: 16px;
   padding: 8px;
   border-radius: 50%;
   background-color: #cfcfcf;
 }
+
 #gift-section .text-container li img {
   width: 15px;
   display: block;
 }
+
 #gift-section .wrapper .image-container {
   width: 70%;
 }
+
 #gift-section .wrapper .image-container img {
   max-width: 100%;
 }
+
 /* gift-seection-end */
+
 #testimonial .head {
   text-align: center;
 }
+
 .content {
   width: 100%;
 }
+
 #testimonial .head h1 {
-  font-size: 38px;
+  font-size: 30px;
   letter-spacing: 2px;
 }
+
 #testimonial .head h1 span {
   color: #29317e;
 }
+
 #testimonial .content {
   display: flex;
   justify-content: center;
@@ -495,6 +588,7 @@ main .image-container img {
   /* width: 95%;
   margin: 0 auto; */
 }
+
 #testimonial .content .cards {
   display: block;
   width: 90%;
@@ -505,6 +599,7 @@ main .image-container img {
   height: 300px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
+
 #testimonial .content .cards .user {
   border-radius: 50%;
   width: 30%;
@@ -513,12 +608,14 @@ main .image-container img {
   text-align: center;
   margin-bottom: 20px;
 }
+
 #testimonial .content .cards .quote {
   position: relative;
   top: -33px;
   right: -280px;
   width: 30px;
 }
+
 #testimonial .content .cards h4 {
   font-size: 18px;
   margin-bottom: 10px;
@@ -526,12 +623,14 @@ main .image-container img {
   font-weight: 600;
   color: #3f3f3f;
 }
+
 #testimonial .content .cards p {
   color: #4b4b4b;
   line-height: 1.5em;
   font-size: 14px;
   width: 100%;
 }
+
 .owl-nav {
   display: block;
   position: absolute;
@@ -540,38 +639,39 @@ main .image-container img {
   width: 100%;
   transform: translate(-50%, -50%);
 }
+
 .owl-nav .owl-prev {
   position: absolute;
   left: -25px;
   top: -50px;
   display: block;
 }
+
 .owl-nav .owl-prev span {
   font-size: 46px;
   color: #000;
 }
+
 .owl-nav .owl-next span {
   font-size: 46px;
   color: #000;
 }
+
 .owl-nav .owl-next {
   position: absolute;
   right: -25px;
   top: -50px;
   display: block;
 }
+
 /* testimonial-end */
 
-#app-container {
+#download {
   padding-bottom: 10%;
 }
-#app-container .content {
-  background: linear-gradient(
-      95.62deg,
-      rgba(2, 31, 109, 0.8),
-      rgba(2, 31, 109, 0.8)
-    ),
-    url(../images/download\ background.png);
+
+#download .content {
+  background: linear-gradient( 95.62deg, rgba(2, 31, 109, 0.8), rgba(2, 31, 109, 0.8)), url(../images/download\ background.png);
   background-position: center;
   background-size: cover;
   display: flex;
@@ -581,73 +681,97 @@ main .image-container img {
   background-color: rgb(128, 56, 56);
   border-radius: 38px;
 }
-#app-container .text {
+
+#download .text {
   width: 60%;
 }
-#app-container .text h1 {
+
+#download .text h1 {
   font-size: 38px;
   color: #fff;
   line-height: 1.5em;
   width: 80%;
 }
-#app-container .icons {
+
+#download .icons {
   list-style: none;
   width: 30%;
 }
-#app-container .icons li {
+
+#download .icons li {
   width: 100%;
   margin-bottom: 20px;
 }
-#app-container .icons li:last-child {
+
+#download .icons li:last-child {
   margin-bottom: 0;
 }
-#app-container .icons li:hover {
+
+#download .icons li:hover {
   transform: scale(1.1);
   transition: all 0.3s ease-in;
 }
-#app-container .icons li img {
+
+#download .icons li img {
   width: 70%;
   display: block;
 }
+
 /* app-end */
 
 footer {
-  padding: 4% 0 2% 0;
-  background-color: #29317e;
+  padding: 8% 0 2% 0;
+  background: linear-gradient( 95.62deg, rgba(2, 31, 109, 0.8), rgba(2, 31, 109, 0.8)), url(../images/download\ background.png);
   text-align: center;
+  background-position: center;
+  background-size: cover;
 }
+
 footer img {
-  width: 100px;
-  margin-bottom: 20px;
+  width: 120px;
+  margin-bottom: 25px;
 }
+
 footer .social {
   display: flex;
   justify-content: center;
   list-style: none;
+  margin-bottom: 4%;
 }
+
 footer .social li {
   margin-right: 26px;
 }
+
 footer .social li:hover {
   transform: scale(1.1);
   transition: all 0.3s ease-in;
 }
+
 footer .social li:last-child {
   margin-right: 0;
 }
+
 footer .social li img {
   width: 30px;
+  border-radius: 50%;
+  filter: invert(1);
 }
+
 footer .contact-us p {
   color: #b9b9b9;
+  letter-spacing: 1px;
 }
+
 footer .contact-us p a:hover {
   color: #fff;
 }
+
 footer .contact-us a {
   text-decoration: none;
   color: #b9b9b9;
 }
+
 footer .contact-us p span {
   margin: 0 10px;
 }
@@ -667,7 +791,15 @@ footer .contact-us p span {
   #gift-section .wrapper .image-container img {
     max-width: 95%;
   }
+  #testimonial .content .cards {
+    padding: 9% 6% 5% 6%;
+  }
+  #testimonial .content .cards .quote {
+    top: -43px;
+    right: -240px;
+  }
 }
+
 @media all and (max-width: 980px) {
   header .nav-bar {
     display: block;
@@ -728,8 +860,7 @@ footer .contact-us p span {
     animation: animista 0.6s linear;
   }
   @keyframes animista {
-    0%,
-    50% {
+    0%, 50% {
       transform: rotateY(360deg);
     }
     100% {
@@ -748,6 +879,9 @@ footer .contact-us p span {
   main .text-container p {
     width: 90%;
   }
+  #about-us {
+    padding: 15% 0 7% 0;
+  }
   #accounts {
     padding-bottom: 15%;
   }
@@ -762,7 +896,7 @@ footer .contact-us p span {
     margin-left: 35%;
   }
   #chat-section {
-    padding-bottom: 6%;
+    padding-bottom: 15%;
   }
   #chat-section .wrapper {
     flex-direction: column-reverse;
@@ -775,7 +909,6 @@ footer .contact-us p span {
     margin-left: 35%;
     margin-top: 40px;
   }
-
   #event-section {
     padding-bottom: 15%;
   }
@@ -785,9 +918,6 @@ footer .contact-us p span {
   #event-section .wrapper .image-container {
     width: 50%;
     margin-left: 35%;
-  }
-  #post-section {
-    padding-bottom: 2%;
   }
   #post-section .wrapper {
     flex-direction: column-reverse;
@@ -809,20 +939,23 @@ footer .contact-us p span {
     width: 50%;
     margin-left: 35%;
   }
+  #testimonial .content .cards .user {
+    width: 25%;
+  }
   #testimonial .content .cards .quote {
-    width: 15%;
-    top: -36px;
+    width: 8%;
+    top: -33px;
     right: -75%;
   }
   #testimonial .content .cards {
-    padding: 4% 3%;
+    padding: 5% 3%;
     height: 300px;
   }
   #testimonial .content .cards h4 {
     margin-bottom: 15px;
     top: -125px;
   }
-  #app-container .text h1 {
+  #download .text h1 {
     width: 90%;
     font-size: 36px;
   }
@@ -830,6 +963,7 @@ footer .contact-us p span {
     padding: 5% 0 2% 0;
   }
 }
+
 @media all and (max-width: 768px) {
   main {
     display: flex;
@@ -855,6 +989,9 @@ footer .contact-us p span {
     margin-top: 26px;
     width: 36%;
   }
+  main .image-container img {
+    max-width: 100%;
+  }
   #about-us .wrapper {
     flex-direction: column;
     text-align: center;
@@ -871,7 +1008,7 @@ footer .contact-us p span {
     width: 100%;
     margin-top: 26px;
   }
-  #app-container .text h1 {
+  #download .text h1 {
     width: 100%;
     font-size: 28px;
   }
@@ -888,7 +1025,7 @@ footer .contact-us p span {
     font-size: 32px;
   }
   #gift-section {
-    padding: 15% 0 15% 0;
+    padding: 0 0 15% 0;
   }
   #gift-section .text-container h1 {
     font-size: 32px;
@@ -896,10 +1033,17 @@ footer .contact-us p span {
   #testimonial .head h1 {
     font-size: 34px;
   }
-  #testimonial .content .cards .quote {
-    top: -30px;
+  #testimonial .content .cards {
+    padding: 4% 3%;
   }
-  #app-container .text h1 {
+  #testimonial .content .cards .user {
+    width: 18%;
+  }
+  #testimonial .content .cards .quote {
+    top: -45px;
+    width: 10%;
+  }
+  #download .text h1 {
     font-size: 26px;
   }
   footer {
@@ -909,12 +1053,16 @@ footer .contact-us p span {
     margin-bottom: 26px;
   }
 }
+
 @media all and (max-width: 640px) {
   header .nav-bar {
     height: 450px;
   }
   header .nav-bar li:last-child {
     width: 35%;
+  }
+  main .wrapper {
+    justify-content: space-evenly;
   }
   main .text-container h1 {
     font-size: 44px;
@@ -924,13 +1072,21 @@ footer .contact-us p span {
     font-size: 16px;
   }
   #about-us {
-    padding: 5% 0 2% 0;
+    padding: 15% 0 5% 0;
+  }
+  #about-us .image {
+    display: none;
+  }
+  #about-us .wrapper {
+    align-items: normal;
   }
   #about-us .text {
-    width: 90%;
+    width: 100%;
+    text-align: left;
   }
   #accounts .text-container .content {
     font-size: 18px;
+    width: 100%;
   }
   #accounts .text-container li p {
     font-size: 18px;
@@ -943,6 +1099,7 @@ footer .contact-us p span {
   }
   #event-section .text-container .content {
     font-size: 18px;
+    width: 100%;
   }
   #event-section .text-container li p {
     font-size: 18px;
@@ -955,6 +1112,7 @@ footer .contact-us p span {
   }
   #gift-section .text-container .content {
     font-size: 18px;
+    width: 100%;
   }
   #gift-section .text-container li p {
     font-size: 18px;
@@ -968,19 +1126,19 @@ footer .contact-us p span {
   #testimonial .content .cards {
     width: 90%;
     margin: 20px auto;
-    padding: 10% 3% 4% 3%;
+    padding: 5% 3% 0 3%;
   }
-
   #testimonial .content .cards .quote {
-    top: -37px;
+    top: -44px;
+    width: 10%;
   }
-  #app-container {
+  #download {
     padding-bottom: 15%;
   }
-  #app-container .content {
+  #download .content {
     border-radius: 25px;
   }
-  #app-container .text h1 {
+  #download .text h1 {
     font-size: 24px;
   }
   footer {
@@ -1012,7 +1170,7 @@ footer .contact-us p span {
     font-size: 40px;
   }
   main .image-container {
-    width: 53%;
+    width: 45%;
   }
   #about-us {
     padding: 14% 0 2% 0;
@@ -1045,7 +1203,6 @@ footer .contact-us p span {
   #chat-section {
     padding-bottom: 0;
   }
-
   #chat-section .text-container h1 {
     font-size: 28px;
     line-height: 1.5em;
@@ -1093,7 +1250,7 @@ footer .contact-us p span {
     margin-left: 0;
   }
   #gift-section {
-    padding: 18% 0 22% 0;
+    padding: 0 0 22% 0;
   }
   #gift-section .text-container h1 {
     font-size: 28px;
@@ -1110,14 +1267,20 @@ footer .contact-us p span {
     margin-left: 0;
     margin-top: 16px;
   }
+  #testimonial .content .cards {
+    padding:5% 3%;
+  }
   #testimonial .content {
     padding: 12% 0 18% 0;
   }
   #testimonial .head h1 {
     font-size: 26px;
   }
+  #testimonial .content .cards .user {
+    width: 25%;
+  }
   #testimonial .content .cards .quote {
-    top: -58px;
+    top: -30px;
   }
   .owl-nav .owl-next {
     position: absolute;
@@ -1131,46 +1294,47 @@ footer .contact-us p span {
     top: -50px;
     display: block;
   }
-  #app-container {
+  #download {
     padding-bottom: 18%;
   }
-  #app-container .text {
+  #download .text {
     width: 100%;
     text-align: center;
   }
-  #app-container .icons {
+  #download .icons {
     width: 35%;
   }
-  #app-container .content {
+  #download .content {
     flex-direction: column;
     padding-top: 8%;
   }
-  #app-container .text h1 {
+  #download .text h1 {
     font-size: 18px;
     width: 100%;
     margin-bottom: 26px;
   }
-  #app-container .icons {
+  #download .icons {
     display: flex;
     width: 100%;
   }
-  #app-container .icons li {
+  #download .icons li {
     display: block;
     margin-right: 20px;
   }
-  #app-container .icons li:last-child {
+  #download .icons li:last-child {
     margin-right: 0;
   }
-  #app-container .icons li img {
+  #download .icons li img {
     width: 100%;
   }
-  #app-container .icons {
+  #download .icons {
     width: 80%;
   }
   footer {
     padding: 18% 0;
   }
 }
+
 @media all and (max-width: 360px) {
   header .nav-bar li:last-child {
     width: 55%;
@@ -1187,6 +1351,9 @@ footer .contact-us p span {
     font-size: 14px;
     width: 100%;
     margin-bottom: 20px;
+  }
+  main .image-container {
+    width: 55%;
   }
   #about-us .text h2 {
     font-size: 24px;
@@ -1246,13 +1413,19 @@ footer .contact-us p span {
     width: 80%;
     margin: 0 auto;
   }
+  #testimonial .content .cards {
+    padding: 13% 3%;
+  }
+  #testimonial .content .cards .user {
+    width: 25%;
+  }
   #testimonial .content .cards .quote {
-    top: -45px;
+    top: -55px;
   }
-  #app-container{
-    padding-bottom: 18%;
+  #download {
+    padding-bottom: 20%;
   }
-  #app-container .text h1 {
+  #download .text h1 {
     font-size: 16px;
   }
   footer {
@@ -1262,15 +1435,13 @@ footer .contact-us p span {
     font-size: 14px;
   }
 }
+
 @media all and (max-width: 320px) {
   header .nav-bar {
     height: 450px;
   }
   header .nav-bar li:last-child {
     width: 60%;
-  }
-  main .image-container {
-    width: 50%;
   }
   main .text-container h1 {
     font-size: 32px;
@@ -1325,6 +1496,15 @@ footer .contact-us p span {
   }
   #gift-section .text-container li p {
     font-size: 13px;
+  }
+  #testimonial .content .cards {
+    padding: 15% 3%;
+  }
+  #testimonial .content .cards .user {
+    width: 30%;
+  }
+  #testimonial .content .cards .quote {
+    top: -45px;
   }
   footer img {
     width: 90 px;
