@@ -9,11 +9,7 @@ $(document).ready(function () {
     scrollContainer: null, 
     resetAnimation: true,
   });
-  if ($('.wow').hasClass('animated')) {
-    $(this).removeClass('animated');
-    $(this).removeAttr('style');
-    new WOW().init();
-}
+  
   wow.init();
 
   $(".owl-carousel").owlCarousel({
@@ -29,21 +25,21 @@ $(document).ready(function () {
     responsive: {
       0: {
         items: 1,
-        nav: true,
-      },
-      600: {
-        items: 1,
         nav: false,
       },
+      // 440: {
+      //   items: 1,
+      //   nav: true,
+      // },
       768: {
-        items: 1,
-        nav: false,
-      },
-      980: {
         items: 2,
         nav: false,
       },
-      1000: {
+      // 980: {
+      //   items: 2,
+      //   nav: false,
+      // },
+      1200: {
         items: 3,
         nav: true,
         loop: true,

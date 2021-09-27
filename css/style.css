@@ -51,10 +51,12 @@ body {
   overflow: hidden;
 }
 
+.wow {visibility: hidden;}
 .wrapper {
   width: 90%;
   max-width: 1350px;
   margin: 0 auto;
+  position: relative;
 }
 
 header {
@@ -108,7 +110,6 @@ header .nav-bar li:hover {
 }
 
 header .nav-bar .button {
-  display: none;
   opacity: 1;
   padding: 12px 24px;
   border-radius: 30px;
@@ -122,7 +123,7 @@ header .nav-bar .button:hover {
 
 header .menu-icon {
   display: none;
-  z-index: 44;
+  z-index: 1500;
 }
 
 header .menu-icon span {
@@ -807,7 +808,9 @@ footer .contact-us p span {
     height: 550px;
     right: 0;
     left: 0;
-    top: -100%;
+    top: -200%;
+    visibility: hidden;
+    opacity: 0;
     flex-direction: column;
     position: fixed;
     text-align: center;
@@ -819,6 +822,8 @@ footer .contact-us p span {
     -o-transition: all 0.6s ease-in;
   }
   .active header .nav-bar {
+    visibility: visible;
+    opacity: 1;
     top: 0;
   }
   header .nav-bar li {

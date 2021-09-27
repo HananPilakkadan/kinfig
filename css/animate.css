@@ -26,6 +26,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   animation-duration: 2s;
 }
 
+
+
 @-webkit-keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
     -webkit-transform: translateY(0);
