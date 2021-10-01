@@ -70,7 +70,9 @@ header .wrapper {
   justify-content: space-between;
   align-items: center;
 }
-
+header .logo {
+  width: 35%;
+}
 header .logo img {
   width: 40%;
 }
@@ -79,13 +81,14 @@ header .nav-bar {
   display: flex;
   align-items: center;
   list-style: none;
+  z-index: 55;
 }
 
 header .nav-bar .icon {
   display: none;
 }
 
-header .nav-bar li :last-child {
+header .nav-bar li:last-child {
   margin-right: 0;
 }
 
@@ -171,7 +174,7 @@ main .text-container p {
 }
 
 main .text-container h1 span {
-  color: #29317e;
+  color: #fff;
 }
 
 main .image-container img {
@@ -277,7 +280,7 @@ main .image-container img {
   margin-right: 16px;
   padding: 8px;
   border-radius: 50%;
-  background-color: #cfcfcf;
+  background-color: #f7f6f6;
 }
 
 #accounts .text-container li img {
@@ -287,10 +290,17 @@ main .image-container img {
 
 #accounts .image-container {
   width: 50%;
+  display: flex;
 }
 
 #accounts .image-container img {
-  max-width: 90%;
+  max-width: 45%;
+  width: 100%;
+}
+#accounts .image-container .primary  {
+  position: relative;
+  top: 85px;
+  margin-left: 24px;
 }
 
 /* account-section-end */
@@ -303,11 +313,23 @@ main .image-container img {
   justify-content: space-between;
   align-items: center;
 }
-
-#chat-section .wrapper .image-container img {
-  max-width: 90%;
+#chat-section .wrapper .image-container {
+  display: flex;
+  width: 50%;
 }
-
+#chat-section .wrapper .image-container img {
+  max-width: 43%;
+  width: 100%;
+}
+#chat-section .wrapper .image-container .primary{
+  position: relative;
+  top: 85px;
+  margin-left: 24px;
+}
+#chat-section .text-container {
+  width: 50%;
+  margin-left: 150px;
+}
 #chat-section .text-container h1 {
   font-size: 30px;
   letter-spacing: 2px;
@@ -322,7 +344,7 @@ main .image-container img {
 
 #chat-section .text-container .content {
   font-size: 20px;
-  width: 100%;
+  width: 80%;
   color: #4b4b4b;
   line-height: 1.5em;
   margin-bottom: 20px;
@@ -348,7 +370,7 @@ main .image-container img {
   margin-right: 16px;
   padding: 8px;
   border-radius: 50%;
-  background-color: #cfcfcf;
+  background-color: #f7f6f6;
 }
 
 #chat-section .text-container li img {
@@ -408,7 +430,7 @@ main .image-container img {
   margin-right: 16px;
   padding: 8px;
   border-radius: 50%;
-  background-color: #cfcfcf;
+  background-color: #f7f6f6;
 }
 
 #event-section .text-container li img {
@@ -418,10 +440,17 @@ main .image-container img {
 
 #event-section .wrapper .image-container {
   width: 80%;
+  display: flex;
 }
 
 #event-section .wrapper .image-container img {
-  max-width: 100%;
+  max-width: 50%;
+  width: 100%;
+}
+#event-section .wrapper .image-container .primary{
+  position: relative;
+  top: 85px;
+  margin-left: 24px;
 }
 
 /* event-section-end */
@@ -437,10 +466,16 @@ main .image-container img {
 
 #post-section .wrapper .image-container {
   width: 50%;
+  display: flex;
 }
 
 #post-section .wrapper .image-container img {
-  max-width: 90%;
+  max-width: 45%;
+}
+#post-section .wrapper .image-container .primary {
+  position: relative;
+  top: 85px;
+  margin-left: 24px;
 }
 
 #post-section .text-container {
@@ -487,7 +522,7 @@ main .image-container img {
   margin-right: 16px;
   padding: 8px;
   border-radius: 50%;
-  background-color: #cfcfcf;
+  background-color: #f7f6f6;
 }
 
 #post-section .text-container li img {
@@ -547,7 +582,7 @@ main .image-container img {
   margin-right: 16px;
   padding: 8px;
   border-radius: 50%;
-  background-color: #cfcfcf;
+  background-color: #f7f6f6;
 }
 
 #gift-section .text-container li img {
@@ -556,11 +591,18 @@ main .image-container img {
 }
 
 #gift-section .wrapper .image-container {
-  width: 70%;
+  width: 100%;
+  display: flex;
 }
 
 #gift-section .wrapper .image-container img {
-  max-width: 100%;
+  max-width: 50%;
+  width: 100%;
+}
+#gift-section .wrapper .image-container .primary {
+  position: relative;
+  top: 85px;
+  margin-left: 24px;
 }
 
 /* gift-seection-end */
@@ -586,50 +628,42 @@ main .image-container img {
   display: flex;
   justify-content: center;
   padding: 10% 0;
-  /* width: 95%;
-  margin: 0 auto; */
 }
-
-#testimonial .content .cards {
+#testimonial .content .container {
   display: block;
-  width: 90%;
-  padding: 5% 6%;
-  text-align: center;
-  border-radius: 35px;
-  margin: 20px auto;
-  height: 300px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  width: 50%;
+  padding: 16px;
+  border-radius: 15px;
+  background: rgba(195, 104, 104, 0.74);
+  margin-right: 20px;
 }
-
-#testimonial .content .cards .user {
-  border-radius: 50%;
-  width: 30%;
-  max-width: 40%;
-  margin: 0 auto;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-#testimonial .content .cards .quote {
-  position: relative;
-  top: -33px;
-  right: -280px;
-  width: 30px;
-}
-
-#testimonial .content .cards h4 {
-  font-size: 18px;
-  margin-bottom: 10px;
-  letter-spacing: 1px;
-  font-weight: 600;
-  color: #3f3f3f;
-}
-
-#testimonial .content .cards p {
-  color: #4b4b4b;
-  line-height: 1.5em;
-  font-size: 14px;
+#testimonial .content .cards {
   width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  
+}
+#testimonial .content .first {
+  background: url(../images/abhirami.jpg);
+  background-position: center;
+  background-size: cover;
+}
+#testimonial .content .secound {
+  background: url(../images/anshu.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#testimonial .content .cards .caption {
+  background: rgba(40, 40, 156, 0.657);
+  padding:12px 14px;
+  text-align: center;
+  color: #fff;
+  letter-spacing: .5px;
+}
+#testimonial .content .cards .caption h2 {
+  margin-bottom: 16px;
 }
 
 .owl-nav {
@@ -780,17 +814,11 @@ footer .contact-us p span {
 /* responsive */
 
 @media all and (max-width: 1280px) {
+  header .logo {
+    width: 35%;
+  }
   main .text-container h1 {
     width: 70%;
-  }
-  #chat-section .wrapper .image-container img {
-    max-width: 85%;
-  }
-  #post-section .wrapper .image-container img {
-    max-width: 85%;
-  }
-  #gift-section .wrapper .image-container img {
-    max-width: 95%;
   }
   #testimonial .content .cards {
     padding: 9% 6% 5% 6%;
@@ -835,6 +863,7 @@ footer .contact-us p span {
   }
   header .nav-bar li:last-child {
     width: 25%;
+    margin: 0 auto;
     border: none;
   }
   header .nav-bar .icon {
@@ -878,6 +907,9 @@ footer .contact-us p span {
   #spotlight {
     background-position: center;
   }
+  main .wrapper {
+    justify-content: center;
+  }
   main .text-container h1 {
     width: 90%;
   }
@@ -888,7 +920,7 @@ footer .contact-us p span {
     padding: 15% 0 7% 0;
   }
   #accounts {
-    padding-bottom: 15%;
+    padding-bottom:20%;
   }
   #accounts .wrapper {
     flex-direction: column;
@@ -900,14 +932,18 @@ footer .contact-us p span {
     width: 60%;
     margin-left: 35%;
   }
+  #accounts .image-container img {
+    max-width: 40%;
+  }
   #chat-section {
-    padding-bottom: 15%;
+    padding-bottom: 20%;
   }
   #chat-section .wrapper {
     flex-direction: column-reverse;
   }
   #chat-section .text-container {
     width: 100%;
+    margin-left: 0;
   }
   #chat-section .image-container {
     width: 60%;
@@ -915,7 +951,7 @@ footer .contact-us p span {
     margin-top: 40px;
   }
   #event-section {
-    padding-bottom: 15%;
+    padding-bottom: 20%;
   }
   #event-section .wrapper {
     flex-direction: column;
@@ -923,6 +959,12 @@ footer .contact-us p span {
   #event-section .wrapper .image-container {
     width: 50%;
     margin-left: 35%;
+  }
+  #event-section .wrapper .image-container img {
+    max-width: 43%;
+  }
+  #post-section {
+    padding-bottom: 20%;
   }
   #post-section .wrapper {
     flex-direction: column-reverse;
@@ -934,8 +976,8 @@ footer .contact-us p span {
     width: 65%;
     margin-left: 35%;
   }
-  #post-section .wrapper .image-container img {
-    max-width: 95%;
+  #gift-section {
+    padding-bottom: 22%;
   }
   #gift-section .wrapper {
     flex-direction: column;
@@ -943,6 +985,12 @@ footer .contact-us p span {
   #gift-section .wrapper .image-container {
     width: 50%;
     margin-left: 35%;
+  }
+  #gift-section .wrapper .image-container img {
+    max-width: 43%;
+  }
+  .image-container {
+    margin-top: 20px;
   }
   #testimonial .content .cards .user {
     width: 25%;
@@ -997,19 +1045,26 @@ footer .contact-us p span {
   main .image-container img {
     max-width: 100%;
   }
+  #about-us {
+    padding: 15% 0 15% 0;
+  }
   #about-us .wrapper {
     flex-direction: column;
-    text-align: center;
+    text-align: left;
   }
   #about-us .image {
+    display: none;
     margin-bottom: 30px;
+  }
+  #about-us .text {
+    width: 100%;
   }
   #about-us .text h2 {
     display: inline;
     font-size: 28px;
   }
   #about-us .text p {
-    font-size: 16px;
+    font-size: 20px;
     width: 100%;
     margin-top: 26px;
   }
@@ -1030,7 +1085,7 @@ footer .contact-us p span {
     font-size: 32px;
   }
   #gift-section {
-    padding: 0 0 15% 0;
+    padding: 0 0 22% 0;
   }
   #gift-section .text-container h1 {
     font-size: 32px;
@@ -1060,6 +1115,9 @@ footer .contact-us p span {
 }
 
 @media all and (max-width: 640px) {
+  header .logo img {
+    width: 60%;
+  }
   header .nav-bar {
     height: 450px;
   }
@@ -1076,9 +1134,6 @@ footer .contact-us p span {
     width: 90%;
     font-size: 16px;
   }
-  #about-us {
-    padding: 15% 0 5% 0;
-  }
   #about-us .image {
     display: none;
   }
@@ -1088,6 +1143,9 @@ footer .contact-us p span {
   #about-us .text {
     width: 100%;
     text-align: left;
+  }
+  #about-us .text p {
+    font-size: 18px;
   }
   #accounts .text-container .content {
     font-size: 18px;
@@ -1184,7 +1242,7 @@ footer .contact-us p span {
     font-size: 26px;
   }
   #about-us .text p {
-    font-size: 14px;
+    font-size: 16px;
   }
   #accounts {
     padding-bottom: 20%;
@@ -1206,7 +1264,7 @@ footer .contact-us p span {
     margin-top: 16px;
   }
   #chat-section {
-    padding-bottom: 0;
+    padding-top: 15%;
   }
   #chat-section .text-container h1 {
     font-size: 28px;
@@ -1222,6 +1280,9 @@ footer .contact-us p span {
     width: 75%;
     margin-left: 0;
     margin-top: 16px;
+  }
+  #chat-section .wrapper .image-container img {
+    max-width: 48%;
   }
   #event-section {
     padding: 18% 0 18% 0;
@@ -1250,12 +1311,15 @@ footer .contact-us p span {
   #post-section .text-container li p {
     font-size: 16px;
   }
+  #post-section .wrapper .image-container img {
+    max-width: 40%;
+  }
   #post-section .wrapper .image-container {
     width: 70%;
     margin-left: 0;
   }
   #gift-section {
-    padding: 0 0 22% 0;
+    padding: 15% 0 35% 0;
   }
   #gift-section .text-container h1 {
     font-size: 28px;
@@ -1271,6 +1335,9 @@ footer .contact-us p span {
     width: 65%;
     margin-left: 0;
     margin-top: 16px;
+  }
+  #post-section  {
+    padding-top: 15%;
   }
   #testimonial .content .cards {
     padding:5% 3%;
@@ -1341,6 +1408,9 @@ footer .contact-us p span {
 }
 
 @media all and (max-width: 360px) {
+  header .logo img {
+    width: 85%;
+  }
   header .nav-bar li:last-child {
     width: 55%;
   }
@@ -1364,6 +1434,7 @@ footer .contact-us p span {
     font-size: 24px;
   }
   #about-us .text p {
+    font-size: 14px;
     width: 100%;
   }
   #accounts .text-container h1 {
@@ -1446,7 +1517,7 @@ footer .contact-us p span {
     height: 450px;
   }
   header .nav-bar li:last-child {
-    width: 60%;
+    width: 80%;
   }
   main .text-container h1 {
     font-size: 32px;
@@ -1492,6 +1563,9 @@ footer .contact-us p span {
   }
   #post-section .text-container li p {
     font-size: 13px;
+  }
+  #gift-section {
+    padding-bottom: 48%;
   }
   #gift-section .text-container h1 {
     font-size: 24px;
